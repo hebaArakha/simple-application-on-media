@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign UP</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url("assets/39587114-library-wallpapers.jpg");
+        font-size: 2vmax;
+      }
+      ol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+        opacity: 0.9;
+        padding: 2vh;
+        margin: 1vh;
+      }
+      li {
+        margin: 0.5vw;
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      a button {
+        background-color: rgb(255, 77, 0);
+        color: aliceblue;
+        border-radius: 2vw;
+        border: none;
+        padding: 0.5vw 3vh 0.5vw 3vh;
+        font-size: 1.5vw;
+      }
+      form {
+        background-color: black;
+        height: 60vh;
+        width: 30vw;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1vmax 3vmax 2vmax 3vmax;
+        margin: auto;
+        margin-top: 20vh;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 0.5vh;
+        height: 5vh;
+      }
+      .container {
+        width: 100vw;
+      }
+      input[type="submit"] {
+        background-color: rgb(255, 77, 0);
+        border-radius: 15px;
+        border: none;
+        color: white;
+        font-size: 1.5vmax;
+        padding: 0.5vw;
+      }
+      input::placeholder {
+        font-size: 1.5vmax;
+      }
+      h3 {
+        text-align: center;
+      }
+      form > a {
+        font-size: 1.5vmax;
+        opacity: 0.5;
+        color: aliceblue;
+      }
+      form label {
+        font-size: 1.5vmax;
+      }
+      h3 {
+        text-align: center;
+        padding: 1vh 0vh 2vh 0vh;
+        font-size: 2vmax;
+      }
+      @media screen and (max-width: 600px) {
+        ol {
+          margin: 0;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        ol {
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+          align-items: center;
+          padding: 2vh;
+        }
+        li {
+          margin: 1vh;
+          padding: 1vh;
+          list-style: none;
+        }
+        a button {
+          padding: 1vh;
+          font-size: 2vmax;
+        }
+
+        a button {
+          width: 90vw;
+        }
+        form {
+          width: 70vw;
+          margin-top: 10vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Things to do</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="news" href="#">News</a></li>
+      <li>
+        <a href="./login.html"><button>Login</button></a>
+      </li>
+      <li>
+        <a href="./signup.html"><button>Sign Up</button></a>
+      </li>
+    </ol>
+    <form action="">
+      <h3>Sign Up</h3>
+
+      <label for="un">Username</label>
+      <input type="text" name="un" id="un" placeholder="Enter Username" />
+      <label for="pwd">Password</label>
+      <input type="text" name="pwd" id="pwd" placeholder="Enter Password" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" />
+      <input type="submit" value="Login" />
+      <a href="#">Already have an account?</a>
+    </form>
+  </body>
+</html>
